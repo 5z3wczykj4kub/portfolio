@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #191122;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.4s linear;
+}
+
+.backdrop.backdrop--active {
+  opacity: 1;
+}
+
+.menu__outer {
+  position: fixed;
+  z-index: 100;
+  top: -100px;
+  left: -100px;
+  transition: transform 0.4s linear;
+}
+
+.menu__outer--open {
+  transform: rotate(-90deg);
+}
+
+.menu__inner {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-color: #41a179;
+  border-radius: 50%;
+}
+
+.menu__inner i {
+  padding: 1rem;
+  font-size: 2rem;
+  position: absolute;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.menu__inner i:first-of-type {
+  bottom: 15%;
+  right: 15%;
+}
+
+.menu__inner i:last-of-type {
+  bottom: 15%;
+  left: 15%;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.container__outer {
+  background-color: #fff;
+  min-height: 100vh;
+  transform-origin: top left;
+  transition: transform 0.4s linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes derotate {
+  0% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: rotate(-5deg) translateY(0);
+  }
+
+  50% {
+    transform: rotate(-5deg) translateY(20px);
+  }
+
+  100% {
+    transform: rotate(-5deg) translateY(0);
+  }
+}
+
+.container__inner {
+  max-width: 100rem;
+  padding: 4rem;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.main h3,
+.main h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.main h2 {
+  margin-top: 4rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  animation: projects 1.5s ease-out;
+}
+
+@keyframes projects {
+  from {
+    opacity: 0.5;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 4px 4px 8px #ccc;
+  cursor: pointer;
+}
+
+.project:hover {
+  transform: scale(0.99);
+}
+
+.project img {
+  width: 100%;
+  height: 14rem;
+  object-fit: cover;
+}
+
+.project span {
+  padding: 0.5rem 0.5rem;
+  background-color: #191122;
+  color: #fff;
+  border-radius: 20px;
+  margin-right: 8px;
+  font-size: 0.9rem;
+}
+
+.projects h3 {
+  text-align: left;
+  margin: 1rem 0 1rem 0;
+}
+
+.project__description {
+  margin-top: 2rem;
+}
+
+.navigation__outer {
+  width: 800px;
+  height: 800px;
+  position: fixed;
+  z-index: 100;
+  bottom: -550px;
+  left: -300px;
+  border-radius: 50%;
+  background-color: #191122;
+  color: #fff;
+  font-size: 1.1rem;
+  transform: translate(-50%, 50%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.navigation__outer.navigation__outer--open {
+  transform: translate(0, 0);
+}
+
+.navigation__inner {
+  position: relative;
+}
+
+.navigation__inner ul {
+  list-style: none;
+  position: absolute;
+  top: 5rem;
+  left: 22rem;
+}
+
+.navigation__inner ul li {
+  margin: 1rem 0;
+}
+
+.github {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 70rem) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 45rem) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 38rem) {
+  .menu__outer {
+    top: -125px;
+    left: -125px;
+  }
+
+  .menu__inner i:first-of-type {
+    bottom: 10%;
+    right: 10%;
+  }
+
+  .menu__inner i:last-of-type {
+    bottom: 10%;
+    left: 10%;
+  }
+
+  .header {
+    font-size: 0.8rem;
+  }
+
+  .container__inner {
+    padding: 4rem 1rem;
+  }
+
+  .main {
+    font-size: 0.8rem;
+  }
+
+  .projects h3 {
+    font-size: 1.1rem;
+  }
+
+  .project p {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .project span {
+    font-size: 0.8rem;
+  }
+
+  .navigation__inner ul {
+    list-style: none;
+    position: absolute;
+    top: 5rem;
+    left: 20rem;
+  }
+
+  .email {
+    font-size: 1rem;
+  }
+}
