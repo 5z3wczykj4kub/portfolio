@@ -6,14 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
-    <title>Landing Page</title>
+    <script
+      src="https://unpkg.com/swiper@7/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="index.js" defer></script>
+    <title>5z3wczykj4kub portfolio</title>
   </head>
   <body>
     <div class="wrapper">
@@ -34,71 +42,220 @@
               Information technology student. Eager to learn web development.
               Hire me <span class="no-wrap">(👍 ͡❛ ͜ʖ ͡❛)👍</span>
             </h3>
-            <h2>Checkout my projects</h2>
+            <h2>Projects</h2>
             <section class="projects">
-              <a href="https://5z3wczykj4kub.github.io/currency-converter/">
-                <div class="project">
-                  <img src="./images/currency-converter-screenshot.jpeg" />
-                  <h3>Currency Converter</h3>
-                  <p><span>React.js</span><span>SCSS</span></p>
-                  <p class="project__description">
-                    Browse and calculate currencies.
+              <div class="project" data-project-name="shop">
+                <img src="./images/shop1.png" />
+                <h3>OnlineSzop</h3>
+                <p>
+                  <span>EJS</span><span>Node.js</span><span>Express.js</span
+                  ><span>MongoDB</span>
+                </p>
+              </div>
+              <div class="project" data-project-name="currency-converter">
+                <img src="./images/currency-converter.png" />
+                <h3>Currency Converter</h3>
+                <p><span>React.js</span><span>SCSS</span></p>
+              </div>
+              <div class="project" data-project-name="cheap-games">
+                <img src="./images/cheap-games-1.png" />
+                <h3>cheapGames</h3>
+                <p><span>HTML</span><span>SCSS</span><span>JavaScript</span></p>
+              </div>
+            </section>
+            <h2>Mini projects</h2>
+            <section class="projects">
+              <a href="https://5z3wczykj4kub.github.io/clock" target="_blank">
+                <div class="project mini-project">
+                  <img src="./images/clock.png" />
+                  <h3>Clock</h3>
+                  <p>
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
                   </p>
                 </div>
               </a>
-              <a href="https://5z3wczykj4kub.github.io/tic-tac-toe">
-                <div class="project">
-                  <img src="./images/tic-tac-toe-screenshot.jpeg" />
+              <a
+                href="https://5z3wczykj4kub.github.io/tic-tac-toe"
+                target="_blank"
+              >
+                <div class="project mini-project">
+                  <img src="./images/tic-tac-toe.png" />
                   <h3>Tic Tac Toe</h3>
                   <p>
                     <span>HTML</span><span>CSS</span><span>JavaScript</span>
                   </p>
-                  <p class="project__description">Play tic tac toe.</p>
                 </div>
               </a>
-              <a href="https://5z3wczykj4kub.github.io/rock-paper-scissors">
-                <div class="project">
-                  <img src="./images/rock-paper-scissors-screenshot.jpeg" />
+              <a
+                href="https://5z3wczykj4kub.github.io/rock-paper-scissors"
+                target="_blank"
+              >
+                <div class="project mini-project">
+                  <img src="./images/rock-paper-scissors.png" />
                   <h3>Rock Paper Scissors</h3>
                   <p>
                     <span>HTML</span><span>CSS</span><span>JavaScript</span>
                   </p>
-                  <p class="project__description">Play rock paper scissors.</p>
                 </div>
               </a>
-              <a href="https://5z3wczykj4kub.github.io/coin-toss">
-                <div class="project">
-                  <img src="./images/coin-toss-screenshot.jpeg" />
+              <a
+                href="https://5z3wczykj4kub.github.io/coin-toss"
+                target="_blank"
+              >
+                <div class="project mini-project">
+                  <img src="./images/coin-toss.png" />
                   <h3>Coin toss</h3>
                   <p>
                     <span>HTML</span><span>CSS</span><span>JavaScript</span>
                   </p>
-                  <p class="project__description">
-                    Toss a coin to your witcher.
-                  </p>
                 </div>
               </a>
-              <a href="https://5z3wczykj4kub.github.io/piano">
-                <div class="project">
-                  <img src="./images/piano-screenshot.jpeg" />
+              <a href="https://5z3wczykj4kub.github.io/piano" target="_blank">
+                <div class="project mini-project">
+                  <img src="./images/piano.png" />
                   <h3>Piano</h3>
                   <p>
                     <span>HTML</span><span>CSS</span><span>JavaScript</span>
                   </p>
-                  <p class="project__description">Just a piano</p>
                 </div>
               </a>
-              <a href="https://5z3wczykj4kub.github.io/hanoi">
-                <div class="project">
-                  <img src="./images/hanoi-screenshot.jpeg" />
+              <a href="https://5z3wczykj4kub.github.io/hanoi" target="_blank">
+                <div class="project mini-project">
+                  <img src="./images/hanoi.png" />
                   <h3>Hanoi</h3>
                   <p>
                     <span>HTML</span><span>CSS</span><span>JavaScript</span>
                   </p>
-                  <p class="project__description">Hanoi towers</p>
                 </div>
               </a>
             </section>
+            <div id="currency-converter" class="modal">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      class="modal-image"
+                      src="./images/currency-converter.png"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="modal-image"
+                      src="./images/currency-converter-mobile-1.png"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="modal-image"
+                      src="./images/currency-converter-mobile-2.png"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+              <h3 class="modal-title">Currency converter</h3>
+              <p class="modal-desc">
+                <b>Description: </b>Simple currency converter. Rates data
+                fetched from
+                <a href="https://api.nbp.pl/" target="_blank">NBP API</a>.
+              </p>
+              <div class="modal-controls">
+                <a
+                  href="https://github.com/5z3wczykj4kub/currency-converter"
+                  target="_blank"
+                  ><i class="fab fa-github"></i> Source code</a
+                >
+                <a
+                  href="https://5z3wczykj4kub.github.io/currency-converter/"
+                  target="_blank"
+                  ><i class="fas fa-play"></i> Live demo</a
+                >
+              </div>
+            </div>
+            <div id="cheap-games" class="modal">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="modal-image" src="./images/cheap-games-1.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="modal-image" src="./images/cheap-games-2.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="modal-image" src="./images/cheap-games-3.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="modal-image" src="./images/cheap-games-4.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="modal-image" src="./images/cheap-games-5.png" />
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+              <h3 class="modal-title">cheapGames</h3>
+              <p class="modal-desc">
+                <b>Description: </b>cheapGames is a game price comparison
+                website built with HTML, SCSS and Vanilla JavaScript (no
+                frameworks). It uses
+                <a href="https://apidocs.cheapshark.com/" target="_blank"
+                  >CheapShark API</a
+                >
+                for fetching games data.
+              </p>
+              <div class="modal-controls">
+                <a
+                  href="https://github.com/janskiba/cheapGames/tree/main"
+                  target="_blank"
+                  ><i class="fab fa-github"></i> Source code</a
+                >
+                <a href="https://janskiba.github.io/cheapGames/" target="_blank"
+                  ><i class="fas fa-play"></i> Live demo</a
+                >
+              </div>
+            </div>
+            <div id="shop" class="modal">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="modal-image" src="./images/shop1.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="modal-image" src="./images/shop2.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="modal-image" src="./images/shop3.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="modal-image" src="./images/shop4.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <video
+                      class="modal-image"
+                      src="./images/shop.mp4"
+                      controls
+                    ></video>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+              <h3 class="modal-title">OnlineSzop</h3>
+              <p class="modal-desc">
+                <b>Description: </b>
+                Dummy online shop server-side renderd CRUD app created with
+                Express.js (Node.js framework), EJS (templating engine) and
+                MongoDB (NoSQL database). Cart data saved to Local Storage.
+              </p>
+              <div class="modal-controls">
+                <a href="https://github.com/5z3wczykj4kub/shop" target="_blank"
+                  ><i class="fab fa-github"></i> Source code</a
+                >
+              </div>
+            </div>
+            <div class="modal-backdrop"></div>
           </main>
         </div>
       </div>
@@ -106,7 +263,9 @@
         <nav class="navigation__inner">
           <ul>
             <li class="github">
-              <a href="https://github.com/5z3wczykj4kub?tab=repositories"
+              <a
+                href="https://github.com/5z3wczykj4kub?tab=repositories"
+                target="_blank"
                 ><i class="fab fa-github"></i> Github</a
               >
             </li>
